@@ -1,0 +1,40 @@
+/* ========================================
+12. Alerts
+======================================== */
+
+.alert {
+	position: relative;
+	border: 1px solid $color-4;
+	color: $color-10;
+	p {
+		margin-bottom: 0;
+		padding: 12px;
+	}
+	&__close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 100%;
+		cursor: pointer;
+		&:after {
+			position: absolute;
+			top: 50%;
+	    	right: 9px;
+			color: #fff;
+			content: "\f2d7";
+			font-size: 18px;
+			font-family: "Ionicons";
+	    	transform: translate3d(0,-50%,0);
+		}
+	}
+	&--failed {
+		background-color: $warning-color-red;
+	}
+	&--warning {
+		background-color: $warning-color-amber;
+	}
+	&--success {
+		background-color: $warning-color-green;
+	}
+}

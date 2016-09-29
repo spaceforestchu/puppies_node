@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+    {{>head}}
+	</head>
+<body class="flagstone-4col-portfolio">
+
+
+<!-- End of page pre-loader -->
+
+<header class="primary-header primary-header--fixed-nav">
+  {{>nav}}
+</header>
+
+<!-- End of site main header -->
+
+<section class="background-color-4 sub-header sub-header-banner-1">
+	<div class="grid-container">
+		<div class="grid-row">
+			<div class="column-12 animated-parent">
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- End of section -->
+
+<section class="margin-bottom-100">
+	<div class="grid-container">
+      <form action="/signup" method="post">
+        <input name="name" type="text" placeholder="Name"  /> <br />
+        <input name="email" type="text" placeholder="Email"  /> <br />
+        <input name="password" type="password" placeholder="Password"  /> <br />
+        <input type="submit"  value="Sign Up" />
+      </form>
+	</div>
+</section>
+
+<!-- End of section -->
+
+<footer class="background-color-2 padding-top-80 padding-bottom-80">
+  {{>footer}}
+</footer>
+
+{{>javascript}}
+
+</body>
+</html>

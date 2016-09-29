@@ -1,0 +1,16 @@
+/* ========================================
+08. Sidebars
+======================================== */
+
+.sidebar {
+	float: left;
+	clear: both;
+	width: 100%;
+	&__block {
+		margin-bottom: 30px;
+		border-bottom: 1px solid $color-12;
+		&--last {
+			border-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+@mixin breakpoint($point) {
+	@if $point == large {
+		@media #{$breakpoint-large} { @content; }
+	}
+	@else if $point == medium {
+		@media #{$breakpoint-medium} { @content; }
+	}
+	@else if $point == small {
+		@media #{$breakpoint-small}  { @content; }
+	}
+	@else if $point == xsmall {
+		@media #{$breakpoint-xsmall}  { @content; }
+	}
+}
+
+@mixin triangle ($border-1, $border-2, $border-3, $color) {
+	border-left: $border-1 solid transparent;
+	border-right: $border-2 solid transparent;
+	border-bottom: $border-3 solid $color;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin border-top-radius($radius-right, $radius-left) {
+	border-top-right-radius: $radius-right;
+	border-top-left-radius: $radius-left;
+	background-clip: padding-box;
+}
+
+@mixin border-right-radius($radius-right, $radius-left) {
+	border-bottom-right-radius: $radius-right;
+	border-top-right-radius: $radius-left;
+	background-clip: padding-box;
+}
+
+@mixin border-bottom-radius($radius-right, $radius-left) {
+	border-bottom-right-radius: $radius-right;
+	border-bottom-left-radius: $radius-left;
+	background-clip: padding-box;
+}
+
+@mixin border-left-radius($radius-left, $radius-right) {
+	border-bottom-left-radius: $radius-left;
+	border-top-left-radius: $radius-right;
+	background-clip: padding-box;
+}
+
+@mixin button-bg($bg) {
+	background: $bg;
+	&:hover {
+		background:darken($bg,10%);
+	}
+	&:active {
+		background:darken($bg,25%);
+	}
+}
+
+@mixin button-ghost($size, $border-color, $border-hover, $text-color) {
+	border: $size solid $border-color;
+	background: none;
+	color: $text-color;
+	&:hover {
+		border: $size solid $border-hover;
+		color: $border-hover;
+		background: none;
+	}
+}
+
+@mixin transition($time, $prop, $easing: null) {
+	transition-duration: $time;
+	transition-property: $prop;
+	transition-timing-function: $easing;
+}

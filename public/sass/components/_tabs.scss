@@ -1,0 +1,36 @@
+/* ========================================
+31. Tabs
+======================================== */
+
+.list-item--tabs {
+	padding: 10px 20px 10px;
+	cursor: pointer;
+	@include transition(350ms, background-color);
+	&:hover {
+		background-color: $color-11;
+	}
+}
+.tabs {
+	margin-bottom: $text-margin-bottom;
+	&__content {
+		overflow: hidden;
+		height: 0;
+		opacity: 0;
+		@include transition(900ms, opacity);
+	}
+}
+
+.current-content-tab {
+	display: block;
+	padding: 15px;
+	height: auto;
+	border: 1px solid $color-12;
+	opacity: 1;
+}
+
+.current-list-tab {
+	background-color: $color-11;
+	&:hover {
+		background-color: darken($color-11, 10%);
+	}
+}

@@ -1,0 +1,26 @@
+/* ========================================
+35. Video
+======================================== */
+
+.video-background {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	&__content {
+		position: absolute;
+		top: 50%;
+		z-index: 10;
+		width: 100%;
+		transform: translate3d(0,-50%,0);
+	}
+}
+
+.video {
+	top: 50%;
+    left: 50%;
+    display: block;
+    min-height: auto;
+    width: 100%;
+    background: url(YOUR_VIDEO_URL_HERE) no-repeat;
+    background-size: cover;
+}

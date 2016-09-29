@@ -1,0 +1,15 @@
+/* ========================================
+03. Backgrounds
+======================================== */
+
+.hero-unit{
+	&--banner-1 {
+		background-image: url(../img/photography/photography__hero-image-1.jpg);
+	}
+	&--banner-2 {
+		background-image: url(../img/photography/photography__hero-image-2.jpg);
+	}
+	&--banner-3 {
+		background-image: url(../img/photography/photography__hero-image-3.jpg);
+	}
+}

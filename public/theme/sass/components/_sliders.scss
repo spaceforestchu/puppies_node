@@ -1,0 +1,131 @@
+/* ========================================
+29. Sliders
+======================================== */
+
+%slideshow-effect-no-opacity {
+	opacity: 0;
+}
+
+%slideshow-effect-full-opacity {
+	opacity: 1;
+}
+
+.ensemble-slideshow-container {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+
+.ensemble-slideshow {
+	position: relative;
+	float: left;
+	clear: both;
+	overflow: hidden;
+	min-height: 225px;
+	width: 100%;
+	&__slide {
+		position: relative;
+		width: 100%;
+		&>img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__pager {
+		float: left;
+		margin-top: 10px;
+		width: 100%;
+		text-align: center;
+		&-item {
+			display: inline-block;
+			margin-right: 5px;
+			width: 15px;
+			height: 15px;
+			border: 2px solid $color-10;
+			cursor: pointer;
+			@include transition(350ms, background-color, ease-in-out);
+			&-active, &:hover {
+				background-color: $color-10;
+			}
+		}
+		&--on-slider {
+			position: absolute;
+			bottom: 20px;
+			z-index: 120;
+		}
+		&--rounded .ensemble-slideshow__pager-item {
+			border-radius: 100%;
+		}
+	}
+	&__previous-slide, &__next-slide {
+		position: absolute;
+		top: 50%;
+		z-index: 110;
+		width: 60px;
+		height: 60px;
+		background-color: $color-2;
+		color: $color-10;
+		text-align: center;
+		font-size: 30px;
+		line-height: 60px;
+		transform: translateY(-50%);
+		@include transition(350ms, (background-color, left, right));
+		&:hover {
+			background-color: rgba($color-2, 0.7);
+		}
+	}
+	&__next-slide {
+		right: -60px;
+	}
+	&__previous-slide {
+		left: -60px;
+	}
+	&:hover &__next-slide {
+		right: 0;
+	}
+	&:hover &__previous-slide {
+		left: 0;
+	}
+	&__layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 105;
+		overflow: hidden;
+		padding: 80px;
+		min-height: 200px;
+		width: 100%;
+		&-top-center {
+			text-align: center;
+		}
+		&-center {
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&-top-right .ensemble-slideshow__caption,
+		&-bottom-right .ensemble-slideshow__caption  {
+			text-align: right;
+		}
+		&-top-left .ensemble-slideshow__caption  {
+			text-align: left;
+		}
+		&-bottom-right,
+		&-bottom-left,
+		&-bottom-center {
+			top: auto;
+			right: 0;
+			bottom: 0;
+		}
+		&-bottom-left {
+			text-align: left;
+		}
+		&-bottom-center {
+			text-align: center;
+		}
+	}
+	&__caption {
+		position: relative;
+	}
+}

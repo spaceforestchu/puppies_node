@@ -1,0 +1,105 @@
+/* ========================================
+04. Grid
+======================================== */
+
+.grid-container {
+	margin-right: auto;
+	margin-left: auto;
+	max-width: $grid-container-width;
+	&-fluid {
+		margin-right: auto;
+		margin-left: auto;
+		width: 100%;
+	}
+}
+
+.grid-row {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	.grid-row {
+		margin-right: -15px;
+		margin-left: -15px;
+		width: auto;
+	}
+}
+
+.grid-container,
+.grid-row,
+.grid-container-fluid {
+	&:after {
+		display: table;
+		clear: both;
+		content: "";
+	}
+}
+
+[class*='column-'] {
+	position: relative;
+    float: left;
+	padding-right: 15px;
+    padding-left: 15px;
+    min-height: 1px;
+    width: 100%;
+}
+
+@for $i from 1 through $grid-columns {
+	.column-#{$i} {
+		width: $grid-width / $grid-columns * $i;
+	}
+}
+
+@include breakpoint(large) {
+	@for $i from 1 through $grid-columns {
+		.column-lg-#{$i} {
+			width: $grid-width / $grid-columns * $i;
+		}
+	}
+ }
+
+@for $i from 1 through $grid-columns {
+	.push-column-#{$i} {
+		margin-left: $grid-width / $grid-columns * $i;
+	}
+}
+
+@include breakpoint(medium) {
+	@for $i from 1 through $grid-columns {
+		.column-#{$i} {
+			width: 100%;
+		}
+		[class*="push-column-"] {
+			margin-left: 0px;
+		}
+	}
+	@for $i from 1 through $grid-columns {
+		.column-md-#{$i} {
+			width: $grid-width / $grid-columns * $i;
+		}
+	}
+ }
+
+ @include breakpoint(small) {
+	@for $i from 1 through $grid-columns {
+		.column-sm-#{$i} {
+			padding-bottom: 20px;
+			width: $grid-width / $grid-columns * $i;
+		}
+	}
+}
+
+ @include breakpoint(xsmall) {
+	@for $i from 1 through $grid-columns {
+		.column-xs-#{$i} {
+			width: $grid-width / $grid-columns * $i;
+		}
+	}
+ }
+
+ @each $hide-media in large, medium, small, xsmall {
+	@include breakpoint($hide-media){
+		.hide-#{$hide-media} {
+			display: none;
+		}
+	}
+}

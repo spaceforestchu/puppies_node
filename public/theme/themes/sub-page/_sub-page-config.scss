@@ -1,0 +1,114 @@
+
+// Grid
+
+$grid-columns:    12;
+$grid-width:      100%;
+$grid-container-width: 1100px;
+
+$breakpoint-large:  "(max-width: 64em)";
+$breakpoint-medium: "(max-width: 48em)";
+$breakpoint-small:  "(max-width: 34em)";
+$breakpoint-xsmall: "(max-width: 25em)";
+
+// Typographic
+
+$line-height:           1.65;
+$text-margin-bottom: 1.5rem;
+$text-base-font-size:   15px;
+$text-base-heading-size:  3.4rem;
+
+// Fonts
+
+$text-font:            "Source Sans Pro", Helvetica, Arial, sans-serif;
+$heading-font:         "Lato", Helvetica, Arial, sans-serif;
+$heading-font-special: "Mr Dafoe", Helvetica, Arial, sans-serif;
+$heading-weight:       300;
+
+// Typography colors
+
+$body-text-color:    #909090;
+$heading-text-color: #303030;
+
+$footer-body-font-color:    #909090;
+$footer-heading-font-color: #909090;
+
+$link-color:                #000000;
+$link-color-hover:          #909090;
+
+$heading-link-color:        #8e8e8e;
+$heading-link-hover:         #000000;
+
+$logo-color:                #909090;
+
+// Colour scheme
+
+$color-1: $body-text-color; // Matches body font color
+$color-2: $heading-text-color; // Matches heading color
+$color-3: #a3438b; // Main brand color 1
+$color-4: #6a1655; // Main brand color 2
+$color-5: #7a446d; // Main brand color 3
+$color-6: #D175BA; // Main brand color 4
+$color-7: #D18DC0; // Main brand color 5
+$color-8: #CF556B; // Main brand color 6 (Accent)
+$color-9: #000000; // Solid black
+$color-10: #ffffff; // Solid white
+$color-11: #f8f8fa; // Soft grey
+$color-12: #e5e6eb; // Light grey
+$color-13: #c0c2ce; // Mid grey
+$color-14: #afafaf; // Dark grey
+
+$button-color-1: #039BE5;
+$button-color-2: #0288D1;
+$button-color-3: #0277BD;
+$button-color-4: #01579B;
+
+$warning-color-red:   #ed4040;
+$warning-color-amber: #ffae00;
+$warning-color-green: #3dd326;
+
+// Navigation
+
+$navbar-height: 100px;
+$navbar-submenu-height: 50px;
+
+$main-nav-text-transform: uppercase;
+
+$main-nav-text-color:         #ffffff;
+$main-nav-text-color-hover:   #cccccc;
+$main-nav-submenu-text-color:         #909090;
+$main-nav-submenu-text-color-hover:   #cccccc;
+$main-nav-submenu-background-color:          #303030;
+
+$mobile-nav-text-color:         #303030;
+$mobile-nav-text-color-hover:   #cccccc;
+$mobile-nav-submenu-text-color:         #909090;
+$mobile-nav-submenu-text-color-hover:   #cccccc;
+$mobile-nav-submenu-background-color:   #ffffff;
+$mobile-nav-background-color:   #ffffff;
+
+$sub-nav-text-color:         #909090;
+$sub-nav-text-color-hover:   #cccccc;
+
+// Header
+
+$header-height: $navbar-height;
+$resized-header-height: $navbar-height -30px;
+
+// Components
+
+$accordion-background-color: $color-11;
+$accordion-border-color:     $color-11;
+
+$draw-background-color:      $color-11;
+$draw-border-color:          $color-11;
+
+$tag-text-color:             #ffffff;
+$tag-background-color:       $color-11;
+
+$modal-background-color:     #000000;
+
+$map-background-color:       #00b6ff;
+
+// Image overlays
+
+$overlay-background-color: #f8f8f8;

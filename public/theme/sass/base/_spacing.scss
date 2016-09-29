@@ -1,0 +1,71 @@
+/* ========================================
+02. Spacing
+======================================== */
+
+$i: 24;
+@while $i > 0 {
+  .margin-top-#{5 * $i} { margin-top: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .margin-bottom-#{5 * $i} { margin-bottom: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .margin-left-#{5 * $i} { margin-left: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .margin-right-#{5 * $i} { margin-right: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .padding-top-#{5 * $i} { padding-top: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .padding-bottom-#{5 * $i} { padding-bottom: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .padding-left-#{5 * $i} { padding-left: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .padding-right-#{5 * $i} { padding-right: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .padding-#{5 * $i} { padding: 5px * $i; }
+  $i: $i - 1;
+}
+
+$i: 24;
+@while $i > 0 {
+  .margin-#{5 * $i} { margin: 5px * $i; }
+  $i: $i - 1;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}

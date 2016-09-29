@@ -1,0 +1,43 @@
+/* ========================================
+11. Accordion
+======================================== */
+
+.accordion {
+	display: block;
+	float: left;
+	clear: both;
+	width: 100%;
+	&__header {
+		position: relative;
+		margin-bottom: 1px;
+		padding: 15px;
+		width: 100%;
+		background-color: $accordion-background-color;
+		cursor: pointer;
+		@include transition(300ms, background-color);
+		&:hover {
+			background-color: darken( $accordion-background-color, 10%);
+		}
+		&:after {
+			position: absolute;
+			right: 12px;
+			content: "\f489";
+			font-size: 18px;
+			font-family: "Ionicons";
+			@include transition(500ms, transform, ease);
+		}
+	}
+	&__active:after {
+		position: absolute;
+		right: 12px;
+		content: "\f489";
+		font-size: 18px;
+		font-family: "Ionicons";
+		transform: rotate(45deg);
+	}
+	&__content {
+		display: none;
+		padding: 20px 15px 5px;
+		border: 1px solid $accordion-border-color;
+	}
+}

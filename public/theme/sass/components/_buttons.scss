@@ -1,0 +1,80 @@
+/* ========================================
+15. Buttons
+======================================== */
+
+.button {
+	display: inline-block;
+	padding: .425rem 1.250rem;
+	outline: 0;
+	border: 1px solid transparent;
+	background-color: $color-2;
+	vertical-align: middle;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	font-weight: 600;
+	line-height: 1.65;
+    user-select: none;
+	-webkit-appearance: none;
+	@include transition(350ms, (background-color, border color));
+	&:hover {
+		background-color: darken($color-2, 25%);
+	}
+	&__medium {
+		padding: .700rem 1.500rem;
+	}
+	&__large {
+		padding: .900rem 1.700rem;
+	}
+	&--pill {
+		border-radius: 50px;
+	}
+	&--light-ghost {
+		@include button_ghost(2px, $color-10, $color-1, $color-10) ;
+	}
+	&--mid-ghost {
+		@include button_ghost(2px, $color-1, $color-2, $color-1) ;
+	}
+	&--dark-ghost {
+		@include button_ghost(2px, $color-2, $color-1, $color-2) ;
+	}
+	&__brand-color-1 {
+		@include button-bg($color-3);
+	}
+	&__brand-color-2 {
+		@include button-bg($color-4);
+	}
+	&__brand-color-3 {
+		@include button-bg($color-5);
+	}
+	&__brand-color-4 {
+		@include button-bg($color-6);
+	}
+	&__brand-color-5 {
+		@include button-bg($color-7);
+	}
+	&__brand-color-6 {
+		@include button-bg($color-8);
+	}
+	&__green {
+		@include button-bg($warning-color-green);
+	}
+	&__amber {
+		@include button-bg($warning-color-amber);
+	}
+	&__red {
+		@include button-bg($warning-color-red);
+	}
+	&__color-1 {
+		@include button-bg($button-color-1);
+	}
+	&__color-2 {
+		@include button-bg($button-color-2);
+	}
+	&__color-3 {
+		@include button-bg($button-color-3);
+	}
+	&__color-4 {
+		@include button-bg($button-color-4);
+	}
+}

@@ -1,0 +1,119 @@
+/* ========================================
+09. Nav
+======================================== */
+
+.primary-header--fixed-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+    z-index: 1000;
+}
+
+%reset-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+%hide-menu {
+	visibility: hidden;
+	opacity: 0;
+}
+
+%show-menu {
+	visibility: visible;
+	opacity: 1;
+}
+
+%animation {
+	@include transition(350ms, (background-color, color), ease-in-out);
+}
+
+.desktop-nav {
+	z-index: 1000;
+	.nav {
+		@extend %reset-list;
+		&-item {
+			position: relative;
+			display: inline;
+			float: left;
+			text-align: center;
+			line-height: $navbar-height;
+			&:last-child .is-submenu {
+				.is-submenu {
+					right: 100%;
+					left: auto;
+				}
+			}
+			a {
+				float: left;
+				margin: 0 20px 0 20px;
+				color: $main-nav-text-color;
+				text-decoration: none;
+				font-weight: 600;
+
+				@include transition(350ms, color);
+				&:hover {
+					color: $main-nav-text-color-hover;
+				}
+			}
+		}
+	}
+	.has-submenu, .has-megamenu {
+		position: relative;
+		&:hover>.is-submenu, &:hover>.is-megamenu, &:hover>.is-megamenu .is-submenu {
+			@extend %show-menu;
+		}
+	}
+	.is-submenu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: 100;
+		padding: 20px 0 20px;
+		background-color: $main-nav-submenu-background-color;
+
+		@extend %reset-list;
+		@extend %hide-menu;
+		@extend %animation;
+		li {
+			float: left;
+			padding: 0 20px;
+			min-width: 180px;
+			text-align: left;
+			a {
+				margin: 0;
+				width: 100%;
+				line-height: $navbar-submenu-height;
+			}
+		}
+		.is-submenu {
+			top: -20px;
+			left: 100%;
+		}
+	}
+	.has-megamenu {
+		position: inherit;
+	}
+	.is-megamenu {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		max-width: $grid-container-width;
+
+		@extend %hide-menu;
+		@extend %animation;
+		.grid-row {
+			margin: 0 15px 0 15px;
+			width: inherit;
+			background-color: $main-nav-submenu-background-color;
+		}
+		.is-submenu {
+			position: relative;
+			overflow: hidden;
+			background-color: transparent;
+		}
+	}
+}

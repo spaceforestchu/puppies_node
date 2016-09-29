@@ -1,0 +1,20 @@
+/* ========================================
+03. Backgrounds
+======================================== */
+
+.hero-unit--banner-1 {
+	background-image: url(../img/design-studio/design-studio__hero-image.jpg);
+}
+
+.split-hero-unit--banner-1:after {
+		background-image: url(../img/design-studio/design-studio__hero-image--split.jpg);
+}
+
+.sub-header {
+	&-banner-1 {
+		background: url(../img/subpages/sub-header__banner-1.jpg);
+	}
+	&-banner-2 {
+		background: url(../img/subpages/sub-header__banner-2.jpg);
+	}
+}

@@ -1,0 +1,54 @@
+
+/* ========================================
+03. Backgrounds
+======================================== */
+
+.sub-header {
+	&-banner-1 {
+		background: url(../img/subpages/sub-header__banner-1.jpg);
+	}
+	&-banner-2 {
+		background: url(../img/subpages/sub-header__banner-2.jpg);
+	}
+}
+
+.icon-box {
+	&__background-image-1 {
+		background: url(../img/subpages/sub-page__icon-box-background-1.jpg);
+	}
+	&__background-image-2 {
+		background: url(../img/subpages/sub-page__icon-box-background-2.jpg);
+	}
+}
+
+.hero-unit {
+	&--banner-1 {
+		background-image: url(../img/subpages/coming-soon__hero-banner-1.jpg);
+	}
+	&--banner-2 {
+		background-image: url(../img/subpages/login__hero-banner-1.jpg);
+	}
+	&--banner-3 {
+		background-image: url(../img/subpages/404__hero-banner-1.jpg);
+	}
+	&--banner-4 {
+		background-image: url(../img/general/flagstone-banner.jpg);
+	}
+}
+
+.split-hero-unit--banner-1:before {
+		background-image: url(../img/subpages/split-hero-demo.jpg);
+}
+
+.split-hero-unit--banner-1:after {
+		background-image: url(../img/subpages/split-hero-demo.jpg);
+}
+
+.parallax {
+	&--banner-1 {
+		background-image: url(../img/subpages/parallax-demo-1.jpg);
+	}
+	&--banner-2 {
+		background-image: url(../img/subpages/parallax-demo-2.jpg);
+	}
+}

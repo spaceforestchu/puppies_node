@@ -1,0 +1,15 @@
+/* ========================================
+32. Tags
+======================================== */
+
+.tag-item {
+	float: left;
+	padding: 5px 12px;
+	background-color: $tag-background-color;
+	color: $tag-text-color;
+	text-decoration: none;
+	@include transition(350ms, (background-color, color), ease-in-out);
+	&:hover {
+		background-color: darken($tag-background-color, 10%)
+	}
+}

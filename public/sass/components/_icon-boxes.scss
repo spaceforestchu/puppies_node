@@ -1,0 +1,50 @@
+/* ========================================
+19. Icon Boxes
+======================================== */
+
+.icon-box {
+	position: relative;
+	float: left;
+	clear: both;
+	width: 100%;
+	background-position: 50% 50%;
+	background-size: cover;
+	&--bordered {
+		border: 1px solid $color-11;
+	}
+	&__icons {
+		position: absolute;
+		top: -30px;
+		right: 0;
+		left: 0;
+		margin: 0 auto;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		&--icons-left {
+			top: 0;
+			right: auto;
+			left: 0;
+			margin: 0;
+		}
+	}
+	&__content {
+		float: left;
+		padding: 20px 20px 0;
+		&--text-right {
+			margin-left: 80px;
+			padding: 0;
+		}
+	}
+	&__icon {
+		display: block;
+		font-size: 3em;
+		line-height: 60px;
+		&--small {
+			font-size: 1em;
+		}
+		&--large {
+			font-size: 5em;
+		}
+	}
+}

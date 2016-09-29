@@ -1,0 +1,49 @@
+/* ========================================
+26. Preloaders
+======================================== */
+
+.page-pre-loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background-color: $color-10;
+	&__container {
+		position: relative;
+		top: 50%;
+		margin: 0 auto;
+		width: 60px;
+		height: 60px;
+		transform: translateY(-50%);
+	}
+	&__effect {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    margin: -15px 0 0 -15px;
+	    width: 30px;
+	    height: 30px;
+		border: 5px solid $color-1;
+	    border-radius: 30px;
+	    opacity: 0;
+	    animation: pulsate 1s ease-out;
+	    animation-iteration-count: infinite;
+	}
+}
+
+@keyframes pulsate {
+    0% {
+      opacity: 0.0;
+      transform: scale(.1);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+}

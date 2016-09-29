@@ -1,0 +1,115 @@
+<!--$page-title = Flagstone :: Modal component-->
+<!--$page-desc = The modal component from the Flagstone HTML theme-->
+<!--$page-char = utf-8-->
+<!--$page-lang = en-->
+<!--$theme-name = sub-page-->
+<!--$page-class = flagstone-modal-->
+<!--@import includes/VARIABLES -->
+<!--@import includes/generic-header -->
+
+<section class="background-color-4 sub-header sub-header-banner-2">
+	<div class="grid-container">
+		<div class="grid-row">
+			<div class="column-12 animated-parent">
+				<h2 class="text-color-10 animated animate__fade-in-up-short">Modal component</h2>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- End of section -->
+
+<section class="margin-top-100 margin-bottom-100">
+	<div class="grid-container">
+		<div class="grid-row">
+			<div class="column-4">
+				<h4>Modal</h4>
+				<p>
+					Modal windows come in 2 differing varieties, a straight forward pop up, that can contain text or images, triggered via button or link and a timed modal that will appear "X" seconds after the page has loaded, configurable via Javascript.
+				</p>
+			</div>
+			<div class="column-4">
+				<h4>On-click modal</h4>
+				<p>
+					Click the link below to open up a modal window.
+				</p>
+				<a href="#" class="modal-open link">Open modal window</a>
+			</div>
+			<div class="column-4">
+				<h4>Timed modal</h4>
+				<p>
+					Probably by the time you have read this text the timed modal will have appeared. You can configure the timed modal to appear a set amount of time after the page has loaded via a simple Javascript setting.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="margin-bottom-100">
+	<div class="grid-container">
+		<div class="grid-row">
+			<div class="column-4">
+				<h4>Single image Lightbox</h4>
+				<p>
+					Lightboxes, like modals come in 2 different varieties, a single image Lightbox, and a gallery option. The images opposite are single Ligthbox images.
+				</p>
+			</div>
+			<div class="column-4">
+				<a data-lightbox="lightbox" href="img/subpages/lightbox-image__large.jpg" >
+					<img src="img/subpages/lightbox-image__thumbnail.jpg" alt="This is a caption">
+				</a>
+			</div>
+			<div class="column-4">
+				<a data-lightbox="lightbox" href="img/subpages/lightbox-image__large-2.jpg" >
+					<img src="img/subpages/lightbox-image__thumbnail-2.jpg" data-caption="This is a caption">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="margin-bottom-100">
+	<div class="grid-container">
+		<div class="grid-row">
+			<div class="column-4">
+				<h4>Gallery Lightbox</h4>
+				<p>
+					When you click on one of the images opposite you will see its possible to shift to the next image using the arrow navigation, effectively turning your Lightbox into an attractive gallery.
+				</p>
+			</div>
+			<div class="column-4">
+				<a data-lightbox="gallery" href="img/subpages/lightbox-image__large.jpg" >
+					<img src="img/subpages/lightbox-image__thumbnail.jpg" alt="This is a caption">
+				</a>
+			</div>
+			<div class="column-4">
+				<a data-lightbox="gallery" href="img/subpages/lightbox-image__large-2.jpg" >
+					<img src="img/subpages/lightbox-image__thumbnail-2.jpg" alt="This is a caption">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="modal modal-toggle">
+	<span class="modal-close"></span>
+	<div class="modal-content">
+		<h4>A Modal Heading</h4>
+		<p>
+			<!-- $lorem-md -->
+		</p>
+	</div>
+</div>
+
+<div class="modal modal-timed-open">
+	<span class="modal-close"></span>
+	<div class="modal-content">
+		<h4>A Timed Modal</h4>
+		<p>
+			<!-- $lorem-md -->
+		</p>
+	</div>
+</div>
+
+<!--@import includes/generic-footer -->
+<!--@import includes/scripts -->

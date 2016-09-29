@@ -1,0 +1,74 @@
+/* ========================================
+03. Utility
+======================================== */
+
+@each $float-direction in left, right, none {
+	.float-#{$float-direction} {
+		float: $float-direction;
+	}
+}
+
+@each $txt-direction in left, right, center, justify {
+	.text-#{$txt-direction} {
+		text-align: $txt-direction;
+	}
+}
+
+@each $align-direction in top, middle, bottom {
+	.align-#{$align-direction} {
+		vertical-align: $align-direction;
+	}
+}
+
+@each $txt-transform in uppercase, lowercase, capitalize {
+	.text-#{$txt-transform} {
+		text-transform: $txt-transform;
+	}
+}
+
+@each $position in absolute, relative, fixed {
+	.position-#{$position} {
+		position: $position;
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.display-inline-block {
+	display: inline-block;
+}
+
+.center-image {
+	display: block;
+	margin: 0 auto;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.line-height {
+	line-height: 1.65;
+}
+
+.small-text {
+	font-size: 70%;
+}
+
+.no-overflow {
+	overflow: hidden;
+}

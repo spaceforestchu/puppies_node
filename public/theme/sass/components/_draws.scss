@@ -1,0 +1,42 @@
+/* ========================================
+17. Draws
+======================================== */
+
+.draw {
+	display: block;
+	float: left;
+	clear: both;
+	width: 100%;
+	&__header {
+		position: relative;
+		margin-bottom: 1px;
+		padding: 15px;
+		background-color: $draw-background-color;
+		cursor: pointer;
+		@include transition(400ms, background-color, color);
+		&:hover {
+			background-color: darken($draw-background-color, 10%);
+		}
+		&:after {
+			position: absolute;
+			right: 12px;
+			content: "\f489";
+			font-size: 18px;
+			font-family: "Ionicons";
+			@include transition(350ms, transform);
+		}
+	}
+	&--active:after {
+		position: absolute;
+		right: 12px;
+		content: "\f489";
+		font-size: 18px;
+		font-family: "Ionicons";
+		transform: rotate(45deg);
+	}
+	&__content {
+		display: none;
+		padding: 20px 15px 5px;
+		border: 1px solid $draw-border-color;
+	}
+}

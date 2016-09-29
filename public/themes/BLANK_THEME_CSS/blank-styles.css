@@ -1,0 +1,463 @@
+/* ========================================
+
+Theme: Blank Theme
+Version: 1.0
+Copyright of Vidal Themes
+
+CONTENTS
+
+01.	Text
+02.	Color scheme
+03.	Backgrounds
+04.	Headers
+05.	Footers
+06.	Sidebars
+07.	Nav
+08.	Mobile Nav
+09.	Accordion
+10.	Alerts
+11.	Animation
+12.	Blog
+13.	Buttons
+14.	Draws
+15.	Hero Unit
+16.	Icon Boxes
+17.	Maps
+18.	Modal
+19.	Notices
+20.	Overlays
+21.	Parallax
+22.	Isotope
+23.	Preloaders
+24.	Pricing
+25.	Promo Boxes
+26.	Sliders
+27.	Social Networks
+28.	Tabs
+29.	Tags
+30.	Team
+31.	Testimonial
+32.	Video
+33.	Forms
+
+======================================== */
+/* ========================================
+01. Text
+======================================== */
+html {
+  font-size: 15px;
+}
+
+body {
+  color: #909090;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 34em) {
+  html {
+    font-size: 13px;
+  }
+}
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.6rem;
+}
+
+.font-size-h1 {
+  font-size: 2.6rem;
+}
+
+.font-size-h2 {
+  font-size: 2.2rem;
+}
+
+.font-size-h3 {
+  font-size: 1.8rem;
+}
+
+.font-size-h4 {
+  font-size: 1.4rem;
+}
+
+.font-size-h5 {
+  font-size: 1rem;
+}
+
+.font-size-h6 {
+  font-size: 0.6rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1.5rem 0;
+  color: #303030;
+  font-weight: 400;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+.link {
+  color: #000000;
+  text-decoration: none;
+  -webkit-transition-duration: 350ms;
+          transition-duration: 350ms;
+  -webkit-transition-property: color;
+  transition-property: color;
+}
+.link:hover {
+  color: #909090;
+}
+
+.special-font {
+  font-size: inherit;
+  font-family: "Sacramento", cursive;
+}
+
+.list {
+  margin-left: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.list--bulleted {
+  margin-left: 17px;
+  list-style-type: disc;
+}
+.list--numbered {
+  margin-left: 17px;
+  list-style-type: decimal;
+}
+.list__item--inline {
+  display: inline;
+}
+.list__item--inline-block {
+  display: inline-block;
+}
+
+.blockquote {
+  position: relative;
+  font-style: italic;
+  font-size: 120%;
+}
+.blockquote:before {
+  position: absolute;
+  left: -40px;
+  height: 100%;
+  border-left: 4px solid #97B6C5;
+  content: "";
+}
+.blockquote-source {
+  font-weight: 700;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td, .table th {
+  padding: 10px;
+  border: 1px solid #97B6C5;
+}
+
+/* ========================================
+02. Colour Scheme
+======================================== */
+.background-color-1 {
+  background-color: #909090;
+}
+
+.background-color-2 {
+  background-color: #303030;
+}
+
+.background-color-3 {
+  background-color: #607D8B;
+}
+
+.background-color-4 {
+  background-color: #97B6C5;
+}
+
+.background-color-5 {
+  background-color: #A3BAC5;
+}
+
+.background-color-6 {
+  background-color: #506068;
+}
+
+.background-color-7 {
+  background-color: #1F475A;
+}
+
+.background-color-8 {
+  background-color: #DCC894;
+}
+
+.background-color-9 {
+  background-color: #000000;
+}
+
+.background-color-10 {
+  background-color: #ffffff;
+}
+
+.background-color-11 {
+  background-color: #f8f8fa;
+}
+
+.background-color-12 {
+  background-color: #e5e6eb;
+}
+
+.background-color-13 {
+  background-color: #c0c2ce;
+}
+
+.background-color-14 {
+  background-color: #afafaf;
+}
+
+.border-color-1 {
+  border-color: #909090;
+}
+
+.border-color-2 {
+  border-color: #303030;
+}
+
+.border-color-3 {
+  border-color: #607D8B;
+}
+
+.border-color-4 {
+  border-color: #97B6C5;
+}
+
+.border-color-5 {
+  border-color: #A3BAC5;
+}
+
+.border-color-6 {
+  border-color: #506068;
+}
+
+.border-color-7 {
+  border-color: #1F475A;
+}
+
+.border-color-8 {
+  border-color: #DCC894;
+}
+
+.border-color-9 {
+  border-color: #000000;
+}
+
+.border-color-10 {
+  border-color: #ffffff;
+}
+
+.border-color-11 {
+  border-color: #f8f8fa;
+}
+
+.border-color-12 {
+  border-color: #e5e6eb;
+}
+
+.border-color-13 {
+  border-color: #c0c2ce;
+}
+
+.border-color-14 {
+  border-color: #afafaf;
+}
+
+.text-color-1 {
+  color: #909090;
+}
+
+.text-color-2 {
+  color: #303030;
+}
+
+.text-color-3 {
+  color: #607D8B;
+}
+
+.text-color-4 {
+  color: #97B6C5;
+}
+
+.text-color-5 {
+  color: #A3BAC5;
+}
+
+.text-color-6 {
+  color: #506068;
+}
+
+.text-color-7 {
+  color: #1F475A;
+}
+
+.text-color-8 {
+  color: #DCC894;
+}
+
+.text-color-9 {
+  color: #000000;
+}
+
+.text-color-10 {
+  color: #ffffff;
+}
+
+.text-color-11 {
+  color: #f8f8fa;
+}
+
+.text-color-12 {
+  color: #e5e6eb;
+}
+
+.text-color-13 {
+  color: #c0c2ce;
+}
+
+.text-color-14 {
+  color: #afafaf;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+/* ========================================
+03. Backgrounds
+======================================== */
+/* ========================================
+04. Headers
+======================================== */
+/* ========================================
+05. Footers
+======================================== */
+/* ========================================
+06. Sidebars
+======================================== */
+/* ========================================
+07. Nav
+======================================== */
+/* ========================================
+08. Mobile Nav
+======================================== */
+/* ========================================
+09. Accordion
+======================================== */
+/* ========================================
+10. Alerts
+======================================== */
+/* ========================================
+11. Animations
+======================================== */
+/* ========================================
+12. Blog
+======================================== */
+/* ========================================
+13. Buttons
+======================================== */
+/* ========================================
+14. Draws
+======================================== */
+/* ========================================
+15. Hero Unit
+======================================== */
+/* ========================================
+16. Icon Boxes
+======================================== */
+/* ========================================
+17. Maps
+======================================== */
+/* ========================================
+18. Modal
+======================================== */
+/* ========================================
+19. Notices
+======================================== */
+/* ========================================
+20. Overlays
+======================================== */
+/* ========================================
+21. Parallax
+======================================== */
+/* ========================================
+22. Isotope
+======================================== */
+/* ========================================
+23. Preloaders
+======================================== */
+/* ========================================
+24. Pricing
+======================================== */
+/* ========================================
+25. Promo Boxes
+======================================== */
+/* ========================================
+26. Sliders
+======================================== */
+/* ========================================
+27. Social Networks
+======================================== */
+/* ========================================
+28. Tabs
+======================================== */
+/* ========================================
+29. Tags
+======================================== */
+/* ========================================
+30. Team
+======================================== */
+/* ========================================
+31. Testimonials
+======================================== */
+/* ========================================
+32. Video
+======================================== */
+/* ========================================
+32. Forms
+======================================== */

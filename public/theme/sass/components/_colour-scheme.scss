@@ -1,0 +1,60 @@
+/* ========================================
+16. Colour Scheme
+======================================== */
+
+@each $bg-number, $bg-color in
+	(1, $color-1),
+	(2, $color-2),
+	(3, $color-3),
+	(4, $color-4),
+	(5, $color-5),
+	(6, $color-6),
+	(7, $color-7),
+	(8, $color-8),
+	(9, $color-9),
+	(10, $color-10) {
+	.background-color-#{$bg-number} {
+		background-color: $bg-color;
+	}
+}
+
+@each $brd-number, $brd-color in
+	(1, $color-1),
+	(2, $color-2),
+	(3, $color-3),
+	(4, $color-4),
+	(5, $color-5),
+	(6, $color-6),
+	(7, $color-7),
+	(8, $color-8),
+	(9, $color-9),
+	(10, $color-10) {
+	.border-color-#{$brd-number} {
+		border-color: $brd-color;
+	}
+}
+
+@each $txt-number, $txt-color in
+	(1, $color-1),
+	(2, $color-2),
+	(3, $color-3),
+	(4, $color-4),
+	(5, $color-5),
+	(6, $color-6),
+	(7, $color-7),
+	(8, $color-8),
+	(9, $color-9),
+	(10, $color-10) {
+	.text-color-#{$txt-number} {
+		color: $txt-color;
+	}
+}
+
+.filter {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+}

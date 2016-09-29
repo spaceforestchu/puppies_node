@@ -1,0 +1,88 @@
+/* ========================================
+14. Blog
+======================================== */
+
+.blog-teaser {
+	float: left;
+	clear: both;
+	width: 100%;
+	&__image {
+		float: left;
+	}
+	&__meta {
+		@extend .blog-teaser;
+		&-list {
+			margin-left: 0;
+			padding: 0;
+			&-item {
+				display: inline;
+				margin-right: 10px;
+				list-style-type: none;
+			}
+		}
+	}
+	&__description {
+		@extend .blog-teaser;
+	}
+	&__read-more {
+		@extend .blog-teaser;
+	}
+}
+
+.blog-comment {
+	position: relative;
+	float: left;
+	margin-bottom: 50px;
+	&__avatar {
+		position: absolute;
+		float: left;
+		width: 120px;
+		height: 120px;
+	}
+	&__meta {
+		float: left;
+		margin-left: 120px;
+		padding-left: 20px;
+		&-name {
+			margin-bottom: 5px;
+		}
+		&-date {
+			font-size: 0.8rem;
+		}
+	}
+	&__comment-text {
+		@extend .blog-comment__meta;
+	}
+	&__reply-link {
+		color: $color-2;
+		text-decoration: none;
+
+		@include transition(350ms, color);
+		&:hover {
+			color: $color-1;
+		}
+	}
+	&--reply {
+		margin-left: 140px;
+	}
+}
+
+.comments-form {
+	float: left;
+	width: 100%;
+}
+
+@include breakpoint(small) {
+	.blog-comment {
+		&--reply {
+			margin-left: 0;
+		}
+		&__avatar {
+			width: 80px;
+			height: 80px;
+		}
+		&__comment-text, &__meta {
+			margin-left: 80px;
+		}
+	}
+}

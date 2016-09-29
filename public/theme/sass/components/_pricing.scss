@@ -1,0 +1,27 @@
+/* ========================================
+27. Pricing
+======================================== */
+
+.pricing-column {
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	&__header, &__footer {
+		padding: 25px 20px 25px;
+	}
+	&__price {
+		padding: 10px 20px 10px;
+	}
+	&__price-amount {
+		font-weight: bold;
+	}
+	&--recommended {
+		transform: scale(1.06);
+	}
+}
+
+@include breakpoint(large) {
+	.pricing-column--recommended {
+		transform: scale(1);
+	}
+}

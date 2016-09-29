@@ -1,0 +1,41 @@
+/* ========================================
+06. Headers
+======================================== */
+
+.nav-item, .primary-header__logo, .primary-header__logo-image, .primary-header, .mobile-nav-toggle, .utility-bar-toggle
+{
+	-webkit-backface-visibility: hidden;
+	@include transition(300ms, (height, line-height, background-color, width, opacity));
+}
+
+.primary-header {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: $header-height;
+	border-bottom: 1px solid $color-11;
+	&__logo, &__logo-image {
+		overflow: hidden;
+		height: $header-height;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	&--resized {
+		height: $resized-header-height;
+		line-height: $resized-header-height;
+		.desktop-nav .nav-item, .primary-header, .primary-header__logo, .primary-header__logo-image, .mobile-nav-toggle, .utility-bar-toggle {
+			width: auto;
+			height: $resized-header-height;
+			line-height: $resized-header-height;
+		}
+	}
+}
+
+@include breakpoint(large) {
+	.primary-header, .primary-header__logo, .primary-header__logo-image, .mobile-nav-toggle {
+		height: $resized-header-height;
+		line-height: $resized-header-height;
+	}
+}

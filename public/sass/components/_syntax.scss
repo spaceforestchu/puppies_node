@@ -1,0 +1,148 @@
+/**
+ * GHColors theme by Avi Aryan (http://aviaryan.in)
+ * Inspired by Github syntax coloring
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	float: left;
+	width: 100%;
+    color: #393A34;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    tab-size: 4;
+    hyphens: none;
+    font-size: $text-base-font-size - 1;
+    font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    line-height: $line-height;
+    direction: ltr;
+}
+
+pre.language-html:before {
+	content: "HTML";
+}
+
+pre.language-css:before {
+	content: "CSS";
+}
+
+pre.language-javascript:before {
+	content: "JAVASCRIPT";
+}
+
+pre.language-scss:before {
+	content: "SCSS";
+}
+
+pre.language-html:before,
+pre.language-css:before,
+pre.language-scss:before,
+pre.language-javascript:before {
+	float: left;
+	padding: 8px 0 8px;
+	width: 100%;
+	border-bottom: 1px solid #ededed;
+	text-align: left;
+	font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+    background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+    background: #b3d4fc;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    overflow: auto;
+    margin: 0;
+    padding: 0 1em 1em;
+    border: 1px solid #ededed;
+    background-color: white;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .2em;
+    padding-top: 1px; padding-bottom: 1px;
+    border: 1px solid #dddddd;
+    background: #f8f8f8;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #999988; font-style: italic;
+}
+
+.token.namespace {
+    opacity: .7;
+}
+
+.token.string,
+.token.attr-value {
+    color: #e3116c;
+}
+.token.punctuation,
+.token.operator {
+    color: #393A34; /* no highlight */
+}
+
+.token.entity,
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.variable,
+.token.constant,
+.token.property,
+.token.regex,
+.token.inserted {
+    color: #36acaa;
+}
+
+.token.atrule,
+.token.keyword,
+.token.attr-name,
+.language-autohotkey .token.selector {
+    color: #00a4db;
+}
+
+.token.function,
+.token.deleted,
+.language-autohotkey .token.tag {
+    color: #9a050f;
+}
+
+.token.tag,
+.token.selector,
+.language-autohotkey .token.keyword {
+    color: #00009f;
+}
+
+.token.important,
+.token.function,
+.token.bold {
+    font-weight: normal;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.highlight {
+	padding: 0 6px 0 6px;
+	background-color: #FDEFFD;
+	white-space: nowrap;
+}

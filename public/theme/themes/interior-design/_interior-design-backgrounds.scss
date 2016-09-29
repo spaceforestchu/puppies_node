@@ -1,0 +1,20 @@
+/* ========================================
+03. Backgrounds
+======================================== */
+
+.hero-unit--banner-1 {
+	background-image: url(../img/interior-design/interior-design__hero-image.jpg);
+}
+
+.parallax--banner-1 {
+	background-image: url(../img/interior-design/interior-design__parallax-1.jpg);
+}
+
+.sub-header {
+	&-banner-1 {
+		background: url(../img/subpages/sub-header__banner-1.jpg);
+	}
+	&-banner-2 {
+		background: url(../img/subpages/sub-header__banner-2.jpg);
+	}
+}

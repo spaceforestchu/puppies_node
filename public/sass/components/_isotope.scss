@@ -1,0 +1,50 @@
+/* ========================================
+25. Isotope
+======================================== */
+
+.isotope-items {
+	overflow: hidden;
+	width: 100%;
+}
+
+.isotope-sizer {
+	width: 33.3333333333%;
+}
+
+@for $i from 1 through $grid-columns {
+	.isotope-width-#{$i} {
+		width: $grid-width / $grid-columns * $i;
+	}
+}
+
+.isotope-item {
+	float: left;
+	clear: none;
+	box-sizing: border-box !important;
+}
+
+.isotope-filters-button, .isotope-filters-button--masonry {
+	display: inline-block;
+    padding: 20px 12px 20px;
+    cursor: pointer;
+
+	@include transition(500ms, (background-color, border), ease-in-out);
+	&:hover {
+		background-color: $color-4;
+	}
+	&__selected, &__selected--masonry {
+		background-color: $color-4;
+	}
+}
+
+@include breakpoint(large) {
+	.isotope-item {
+		width: 50%;
+	}
+}
+
+@include breakpoint(small) {
+	.isotope-item {
+		width: 100%;
+	}
+}

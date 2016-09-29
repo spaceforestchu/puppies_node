@@ -1,0 +1,114 @@
+/* ========================================
+18. Hero Unit
+======================================== */
+
+// Full & sub-page hero unit
+
+.hero-unit-sub-page {
+	height: 500px;
+}
+
+.hero-unit, .hero-unit-sub-page {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	width: 100%;
+	background-position: 50% 50%;
+	background-size: cover;
+	&__content {
+		position: relative;
+		top: 50%;
+		z-index: 10;
+		transform: translateY(-50%);
+	}
+}
+
+// Split screen 50/50 hero unit
+
+.split-hero-unit {
+	position: relative;
+	padding: 100px;
+	&:after {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		display: block;
+		width: 50%;
+		height: 100%;
+		background-size: cover;
+		content: "";
+	}
+	&--left-image {
+		&:after {
+			display: none;
+		}
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 50%;
+			display: block;
+			width: 50%;
+			height: 100%;
+			background-size: cover;
+			content: "";
+		}
+	}
+}
+
+@include breakpoint(medium) {
+	.split-hero-unit {
+		position: relative;
+		padding: 40px 15px 40px 15px;
+		&:after, &:before {
+			display: none;
+		}
+	}
+}
+
+// Offset hero unit
+
+.offset-hero-unit {
+	&__content {
+		position: relative;
+		top: 50%;
+		display: block;
+		float: left;
+		padding: 15px;
+		transform: translateY(-50%);
+	}
+	&__images {
+		width: 175%;
+	}
+	&__image {
+		max-width: inherit;
+	}
+}
+
+@include breakpoint(small) {
+	.offset-hero-unit {
+		& [class*='column-'] {
+			width: 100%;
+		}
+		&__contents {
+			width: 100%;
+		}
+		&__images {
+			width: 100%;
+		}
+		&__image {
+			max-width: inherit;
+		}
+	}
+}
+
+// Sub page hero unit
+
+.sub-page-hero-unit {
+	height: 500px;
+	&__content {
+		position: relative;
+		top: 50%;
+		display: block;
+		transform: translateY(-50%);
+	}
+}

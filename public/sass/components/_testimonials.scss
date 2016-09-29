@@ -1,0 +1,25 @@
+/* ========================================
+34. Testimonial
+======================================== */
+
+.testimonial {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	&__avatar {
+		position: absolute;
+		float: left;
+		width: 150px;
+		height: 150px;
+		&--round {
+			overflow: hidden;
+			border-radius: 100%;
+		}
+	}
+	&__quote {
+		margin-left: 170px;
+	}
+	&__meta-name {
+		font-weight: bold;
+	}
+}
